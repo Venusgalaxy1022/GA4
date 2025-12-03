@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-	<!-- Google tag (gtag.js) -->
+		<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1JY6M9N77P"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
@@ -10,13 +10,14 @@
 	gtag('js', new Date());
 
 	gtag('config', 'G-1JY6M9N77P');
+
+	</script>
 	</script>
 	<meta charset="utf-8">
 	<meta name="robots" content="noindex,nofollow">
 	<meta name="referrer" content="no-referrer-when-downgrade" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 	<title>Burger Osoma</title>
 
 	<!-- BOOTSTRAP CSS -->
@@ -766,6 +767,18 @@
       return false;
     });
   </script>
+
+	// 자바스크립트 작성
+	<script>	
+	// 버거 메뉴 다운로드 버튼 클릭시 해당 이벤트가 기록되도록 하는 것
+	document.querySelector('#burger-menu') // 버튼 요소 선택
+    .addEventListener('click', function(){ // 클릭 행동을 할 때
+		gtag('event', 'click_button', { // 이 gtag가 실행된다 = 이벤트가 기록된다
+			'name': '버거 메뉴 다운로드'
+		});
+	});
+
+	</script>
 
 </body>
 
