@@ -771,13 +771,14 @@
 	// 자바스크립트 작성
 	<script>	
 	// 버거 메뉴 다운로드 버튼 클릭시 해당 이벤트가 기록되도록 하는 것
-		document.querySelector('#burger-menu').addEventListener('click', function(){
-			gtag('event', 'click_button', { 
+		document.querySelector('#buger-menu'). // 객체 선택
+		addEventListener('click', function(){ // 클릭 행동 발동 시에
+			gtag('event', 'click_button', { // gtag 에 따라 이벤트 기록
 				'name': '버거 메뉴 다운로드'
 			});
 		});
 	</script>
-	
+
 </body>
 
 </html>
